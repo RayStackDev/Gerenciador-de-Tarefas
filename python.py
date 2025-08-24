@@ -1,5 +1,3 @@
-tarefas = []
-
 while True:
     print("\n=== Gerenciador de Tarefas ===")
     print("1 - Adicionar tarefa")
@@ -23,3 +21,13 @@ while True:
         break
     else:
         print("Opção Inválida, tente novamente")
+
+tarefas = []
+
+def adicionar_tarefa():
+    descricao = input("Digite a descriçao da tarefa: ").strip()
+    if not descricao:
+        print("Descriçao vazia nao é permitida.")
+        return
+    tarefas.append({'descriçao': descricao, 'concluida': False})
+    print(f"Tarefa adicionada: {descricao}")
