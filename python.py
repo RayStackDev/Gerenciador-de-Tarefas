@@ -31,3 +31,13 @@ def adicionar_tarefa():
         return
     tarefas.append({'descriçao': descricao, 'concluida': False})
     print(f"Tarefa adicionada: {descricao}")
+
+def listar_tarefas():
+    if not tarefas:
+        print("Sua lista está vazia.")
+        return
+    print("\nTarefas:")
+
+    for i, t in enumerate(tarefas, start=1):
+        status = "Feita" if t['concluida'] else "Esperando"
+        print(f"{i}. {status} {t['descriçao']}")
