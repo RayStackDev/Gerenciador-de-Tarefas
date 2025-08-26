@@ -41,3 +41,20 @@ def listar_tarefas():
     for i, t in enumerate(tarefas, start=1):
         status = "Feita" if t['concluida'] else "Esperando"
         print(f"{i}. {status} {t['descriçao']}")
+
+def escolher_indice(prompt):
+    if not tarefas:
+        print("Sua lista está vazia.")
+        return None
+    listar_tarefas()
+
+    try:
+        idx = int(input(prompt))
+        if 1 <= idx <= len(tarefas):
+            return idx - 1
+        print("Numero fora do intervalo.")
+        return None
+    
+    except ValueError:
+        print("Digite um numero valido.")
+        return None
