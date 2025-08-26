@@ -5,7 +5,7 @@ def adicionar_tarefa():
     if not descricao:
         print("Descriçao vazia nao é permitida.")
         return
-    tarefas.append({'descriçao': descricao, 'concluida': False})
+    tarefas.append({'descricao': descricao, 'concluida': False})
     print(f"Tarefa adicionada: {descricao}")
 
 def listar_tarefas():
@@ -68,7 +68,7 @@ while True:
         listar_tarefas()
     elif opcao == 3:
         print("\nVocê escolheu concluir uma tarefa.\n")
-        escolher_indice()
+        concluir_tarefa()
     elif opcao == 4:
         print("\nVocê escolheu remover uma tarefa.\n")
         remover_tarefa()
