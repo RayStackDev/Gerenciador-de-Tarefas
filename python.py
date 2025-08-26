@@ -15,7 +15,7 @@ def listar_tarefas():
     print("\nTarefas:")
 
     for i, t in enumerate(tarefas, start=1):
-        status = "Feita" if t['concluida'] else "Esperando"
+        status = "Feita" if t['concluida'] else "Esperando -"
         print(f"{i}. {status} {t['descricao']}")
 
 def escolher_indice(prompt):
