@@ -58,3 +58,10 @@ def escolher_indice(prompt):
     except ValueError:
         print("Digite um numero valido.")
         return None
+    
+def concluir_tarefa():
+    i = escolher_indice("Numero da tarefa a concluir: ")
+    if i is None:
+        return
+    tarefas[i]['concluida'] = True
+    print(f"Conluida: {tarefas[i]['descriçao']}")
