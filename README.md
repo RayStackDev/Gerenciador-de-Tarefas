@@ -33,7 +33,6 @@ O objetivo principal foi praticar os conceitos fundamentais da programação em 
 - Funções e controle de fluxo (`if`, `while`, `for`)
 - Entrada e saída no terminal (`input` e `print`)
 
----
 
 ## 🧩 Organização do código
 
@@ -44,7 +43,6 @@ O objetivo principal foi praticar os conceitos fundamentais da programação em 
 - `remover_tarefa()` – Remove a tarefa da lista
 - Laço principal (`while True`) – Exibe o menu e controla as opções
 
----
 
 ## 🧪 Aprendizados
 
