@@ -76,4 +76,4 @@ while True:
         print("\nSaindo do programa.")
         break
     else:
-        print("Opção Inválida, tente novamente")
+        print("Opção Inválida, tente novamente.")
